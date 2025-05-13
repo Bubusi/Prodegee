@@ -1,12 +1,12 @@
-// src/App.jsx
+// src/App.tsx
 import React from 'react';
 
-function App() {
+const App: React.FC = () => {
   return (
     <h1 className="text-3xl font-bold underline">
-      Vite + React + Tailwind
+      Vite + React + Tailwind + TypeScript
     </h1>
   );
-}
+};
 
 export default App;
