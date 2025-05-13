@@ -1,14 +1,17 @@
 // src/App.tsx
 import React from 'react'
-import ChatBubble from './components/ChatBubble'
+import { motion } from 'framer-motion'
 
 const App: React.FC = () => {
-  console.log('App rendered—ChatBubble should mount below:')
   return (
-    <div>
-      <p>Hello from App!</p>
-      <ChatBubble />
-    </div>
+    <motion.h1
+      className="text-3xl font-bold underline"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      Vite + React + Tailwind + TypeScript + Recoil + React Query
+    </motion.h1>
   )
 }
 
