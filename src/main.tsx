@@ -9,6 +9,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App'
+import ChatBubble from './components/ChatBubble'  // ← add this
 
 const queryClient = new QueryClient()
 
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root') as HTMLElement).render(
         <BrowserRouter>
           <DndProvider backend={HTML5Backend}>
             <App />
+            <ChatBubble />         {/* ← render it here */}
           </DndProvider>
         </BrowserRouter>
         <ReactQueryDevtools initialIsOpen={false} />
